@@ -9,7 +9,6 @@ describe("DonwloadQueue", () => {
 
         // Mock fetch
         global.fetch = jest.fn((url) => {
-            console.log(url)
             return Promise.resolve({
                 url,
             })
